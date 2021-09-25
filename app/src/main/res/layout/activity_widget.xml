@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WidgetActivity"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black_text"
+        android:text="@string/str_latihan_soal_provinsi"/>
+
+    <View
+        android:id="@+id/view"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#eee" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/tvQuestions1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/color_black_text"
+        android:text="@string/str_questions_1"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestions1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cbBandung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_bandung"/>
+
+        <CheckBox
+            android:id="@+id/cbBogor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_bogor"/>
+
+        <CheckBox
+            android:id="@+id/cbBanjarmmasin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_banjarmasin"/>
+
+        <CheckBox
+            android:id="@+id/cbBontang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_bontang"/>
+
+        <Button
+            android:id="@+id/btnQuestion1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_periksa_nilai"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvValueQ1"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_black_text"
+            android:text="@string/str_nilai_anda_0"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvQuestions2"
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/color_black_text"
+        android:text="@string/str_question_2"/>
+
+    <RadioGroup
+        app:layout_constraintTop_toBottomOf="@id/tvQuestions2"
+        android:id="@+id/rgQuestion2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbSamarinda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_samarinda"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rbKendari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_kendari"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rbPalu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_palu"
+            android:textSize="15sp"/>
+
+        <RadioButton
+            android:id="@+id/rbMakasar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_makasar"
+            android:textSize="15sp"/>
+
+    </RadioGroup>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/rgQuestion2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btnQuestion2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/str_periksa_nilai"
+        android:textSize="16sp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvValueQ2"
+        app:layout_constraintTop_toBottomOf="@id/btnQuestion2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black_text"
+        android:text="@string/str_nilai_anda_0_1"/>
+
+</android.support.constraint.ConstraintLayout>

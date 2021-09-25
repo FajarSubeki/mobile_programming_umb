@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DemoApp</string>
+    <string name="str_bandung">Bandung</string>
+    <string name="str_bogor">Bogor</string>
+    <string name="str_banjarmasin">Banjarmasin</string>
+    <string name="str_bontang">Bontang</string>
+    <string name="str_questions_1">1. Manakah kota dibawah ini yang merupakan ibu kota provinsi?</string>
+    <string name="str_question_2">2. Sebutkan ibu kota propinsi Sulawesi Tenggara</string>
+    <string name="str_nilai_anda_0">Nilai anda : </string>
+    <string name="str_periksa_nilai">Periksa Nilai</string>
+    <string name="str_nilai_anda_0_1">Nilai anda : 0 </string>
+    <string name="str_kendari">Kendari</string>
+    <string name="str_palu">Palu</string>
+    <string name="str_makasar">Makassar</string>
+    <string name="str_samarinda">Samarinda</string>
+    <string name="str_latihan_soal_provinsi">Latihan Soal Provinsi</string>
+</resources>
