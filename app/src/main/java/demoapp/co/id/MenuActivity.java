@@ -13,6 +13,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Button mBtnLingkaran;
     Button mBtnWidget;
     Button mBtnListProvince;
+    Button mBtnToastAlert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +27,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnLingkaran = findViewById(R.id.btnLingkaran);
         mBtnWidget = findViewById(R.id.btnWidget);
         mBtnListProvince = findViewById(R.id.btnProvince);
+        mBtnToastAlert = findViewById(R.id.btnToastAlert);
 
         mBtnLingkaran.setOnClickListener(this);
         mBtnWidget.setOnClickListener(this);
         mBtnListProvince.setOnClickListener(this);
+        mBtnToastAlert.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +43,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MenuActivity.this, WidgetActivity.class));
         }else if (view == mBtnListProvince){
             startActivity(new Intent(MenuActivity.this, ListviewActivity.class));
+        }else if (view == mBtnToastAlert){
+            startActivity(new Intent(MenuActivity.this, ToastAlertActivity.class));
         }
     }
 }
