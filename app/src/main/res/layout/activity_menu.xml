@@ -60,6 +60,26 @@
                 android:textAllCaps="false"
                 android:background="@color/purple_700"/>
 
+            <Button
+                android:id="@+id/btnDataIntent"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent Data"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@color/purple_700"/>
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kamera"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@color/purple_700"/>
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
