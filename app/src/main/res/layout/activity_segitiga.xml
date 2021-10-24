@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    tools:context=".SegitigaActivity">
+
+    <TextView
+        android:id="@+id/tvLuasSegitiga"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black_text"
+        android:text="Luas Segitiga"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvAlasTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvLuasSegitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="17sp"
+        android:textColor="@color/color_black_text"
+        android:text="Alas"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etValueAlas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAlasTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Nilai"
+        android:inputType="number"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvTinggiTitle"
+        app:layout_constraintTop_toBottomOf="@id/etValueAlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="17sp"
+        android:textColor="@color/color_black_text"
+        android:text="Tinggi"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etValueTinggi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTinggiTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Nilai"
+        android:inputType="number"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvHasilTitle"
+        app:layout_constraintTop_toBottomOf="@id/etValueTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="17sp"
+        android:textColor="@color/color_black_text"
+        android:text="Alas   : "/>
+
+    <TextView
+        android:id="@+id/etValueHasil"
+        app:layout_constraintStart_toEndOf="@id/tvHasilTitle"
+        app:layout_constraintTop_toBottomOf="@id/etValueTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nilai"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnSubmit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHasilTitle" />
+
+</android.support.constraint.ConstraintLayout>
