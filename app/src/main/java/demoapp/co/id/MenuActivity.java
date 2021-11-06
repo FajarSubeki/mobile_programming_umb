@@ -21,6 +21,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Button mBtnDataIntent;
     Button mBtnCamera;
     Button mBtnSegitiga;
+    Button mBtnNotes;
     private int CODE_LAUNCH_DATA = 101;
 
     @Override
@@ -39,6 +40,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnDataIntent = findViewById(R.id.btnDataIntent);
         mBtnCamera = findViewById(R.id.btnCamera);
         mBtnSegitiga = findViewById(R.id.btnSegitiga);
+        mBtnNotes = findViewById(R.id.btnNotes);
 
         mBtnLingkaran.setOnClickListener(this);
         mBtnWidget.setOnClickListener(this);
@@ -47,6 +49,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnDataIntent.setOnClickListener(this);
         mBtnCamera.setOnClickListener(this);
         mBtnSegitiga.setOnClickListener(this);
+        mBtnNotes.setOnClickListener(this);
     }
 
     @Override
@@ -67,6 +70,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MenuActivity.this, CameraActivity.class));
         }else if (view == mBtnSegitiga){
             startActivity(new Intent(MenuActivity.this, SegitigaActivity.class));
+        }else if (view == mBtnNotes){
+            startActivity(new Intent(MenuActivity.this, NotesActivity.class));
         }
     }
 
