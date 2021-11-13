@@ -100,6 +100,26 @@
                 android:textAllCaps="false"
                 android:background="@color/purple_700"/>
 
+            <Button
+                android:id="@+id/btnSMS"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMS"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@color/purple_700"/>
+
+            <Button
+                android:id="@+id/btnContact"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:background="@color/purple_700"/>
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
