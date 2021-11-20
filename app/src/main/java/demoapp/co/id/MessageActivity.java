@@ -51,7 +51,7 @@ public class MessageActivity extends AppCompatActivity {
         }
     }
 
-    public void sendSmsBySIntent() {
+    public void     sendSmsBySIntent() {
         // add the phone number in the data
         Uri uri = Uri.parse("smsto:" + phoneNumber.getText().toString());
         Intent smsSIntent = new Intent(Intent.ACTION_SENDTO, uri);
