@@ -25,6 +25,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Button mBtnSms;
     Button mBtnContact;
     Button mBtnCrud;
+    Button mBtnUi;
     private int CODE_LAUNCH_DATA = 101;
 
     @Override
@@ -47,6 +48,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnSms = findViewById(R.id.btnSMS);
         mBtnContact = findViewById(R.id.btnContact);
         mBtnCrud = findViewById(R.id.btnCrud);
+        mBtnUi = findViewById(R.id.btnUI);
 
         mBtnLingkaran.setOnClickListener(this);
         mBtnWidget.setOnClickListener(this);
@@ -58,6 +60,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnSms.setOnClickListener(this);
         mBtnContact.setOnClickListener(this);
         mBtnCrud.setOnClickListener(this);
+        mBtnUi.setOnClickListener(this);
     }
 
     @Override
@@ -86,6 +89,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MenuActivity.this, ContactActivity.class));
         }else if (view == mBtnCrud){
             startActivity(new Intent(MenuActivity.this, CRUDActivity.class));
+        }else if (view == mBtnUi){
+            startActivity(new Intent(MenuActivity.this, UIActivity.class));
         }
     }
 
