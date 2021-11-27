@@ -1,14 +1,15 @@
 package demoapp.co.id;
 
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import demoapp.co.id.util.ListviewActivity;
 
@@ -26,6 +27,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Button mBtnContact;
     Button mBtnCrud;
     Button mBtnUi;
+    Button mBtnMaps;
     private int CODE_LAUNCH_DATA = 101;
 
     @Override
@@ -49,6 +51,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnContact = findViewById(R.id.btnContact);
         mBtnCrud = findViewById(R.id.btnCrud);
         mBtnUi = findViewById(R.id.btnUI);
+        mBtnMaps = findViewById(R.id.btnUMaps);
 
         mBtnLingkaran.setOnClickListener(this);
         mBtnWidget.setOnClickListener(this);
@@ -61,6 +64,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnContact.setOnClickListener(this);
         mBtnCrud.setOnClickListener(this);
         mBtnUi.setOnClickListener(this);
+        mBtnMaps.setOnClickListener(this);
     }
 
     @Override
@@ -91,6 +95,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MenuActivity.this, CRUDActivity.class));
         }else if (view == mBtnUi){
             startActivity(new Intent(MenuActivity.this, UIActivity.class));
+        }else if (view == mBtnMaps){
+            startActivity(new Intent(MenuActivity.this, MapsActivity.class));
         }
     }
 

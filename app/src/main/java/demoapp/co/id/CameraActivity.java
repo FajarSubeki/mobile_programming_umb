@@ -3,12 +3,13 @@ package demoapp.co.id;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class CameraActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class CameraActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-        imageHolder = (ImageView)findViewById(R.id.imageView);
+        imageHolder = findViewById(R.id.imageView);
         Button capturedImageButton = findViewById(R.id.btnCamera);
         capturedImageButton.setOnClickListener(v -> {
             Intent photoCaptureIntent = new

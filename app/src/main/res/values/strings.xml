@@ -14,4 +14,5 @@
     <string name="str_makasar">Makassar</string>
     <string name="str_samarinda">Samarinda</string>
     <string name="str_latihan_soal_provinsi">Latihan Soal Provinsi</string>
+    <string name="google_maps_key">AIzaSyBVwwFb8HEjaGxnhIyyzRRSgyNV7szABK8</string>
 </resources>
