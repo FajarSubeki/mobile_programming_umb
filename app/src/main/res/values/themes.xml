@@ -21,4 +21,9 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="SeekBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlNormal">@color/gray</item>
+    </style>
+
 </resources>
