@@ -15,4 +15,6 @@
     <string name="str_samarinda">Samarinda</string>
     <string name="str_latihan_soal_provinsi">Latihan Soal Provinsi</string>
     <string name="google_maps_key">AIzaSyBVwwFb8HEjaGxnhIyyzRRSgyNV7szABK8</string>
+    <string name="facebook_app_id">173797664936353</string>
+    <string name="fb_login_protocol_scheme">fb173797664936353</string>
 </resources>

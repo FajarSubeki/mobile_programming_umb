@@ -29,6 +29,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Button mBtnUi;
     Button mBtnMaps;
     Button mBtnMedia;
+    Button mBtnSocialLogin;
     private int CODE_LAUNCH_DATA = 101;
 
     @Override
@@ -54,6 +55,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnUi = findViewById(R.id.btnUI);
         mBtnMaps = findViewById(R.id.btnUMaps);
         mBtnMedia = findViewById(R.id.btnMedia);
+        mBtnSocialLogin = findViewById(R.id.btnSosialLogin);
 
         mBtnLingkaran.setOnClickListener(this);
         mBtnWidget.setOnClickListener(this);
@@ -68,6 +70,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mBtnUi.setOnClickListener(this);
         mBtnMaps.setOnClickListener(this);
         mBtnMedia.setOnClickListener(this);
+        mBtnSocialLogin.setOnClickListener(this);
     }
 
     @Override
@@ -102,6 +105,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(MenuActivity.this, MapsActivity.class));
         }else if (view == mBtnMedia){
             startActivity(new Intent(MenuActivity.this, MediaActivity.class));
+        }else if (view == mBtnSocialLogin){
+            startActivity(new Intent(MenuActivity.this, SocialLoginActivity.class));
         }
     }
 
